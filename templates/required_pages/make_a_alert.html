@@ -1,0 +1,13 @@
+{% extends 'common/base_html.html' %}
+{% block title %} Make a Alert {% endblock %}
+
+{% block content %}
+    <br>
+    <h1 style="padding-left: 500px">Make a Alert!</h1>
+
+    <form action="" method="post">
+    {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
